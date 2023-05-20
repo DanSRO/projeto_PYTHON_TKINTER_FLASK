@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CRUD de Alunos e Notas</title>
+</head>
+<body>
+  <h1>CRUD de Alunos e Notas</h1>
+  <a href="/add">Adicionar novo aluno</a>
+  <table border="1">
+    <tr>
+      <th>CPF</th>
+      <th>Nome</th>
+      <th>Data de Nascimento</th>
+      <th>Sexo</th>
+      <th>Av1</th>
+      <th>Av2</th>
+      <th>Média</th>
+      <th>Ações</th>
+    </tr>
+    {% for aluno in alunos %}
+      <tr>
+        <td>{{ aluno.cpf}}</td>
+        <td>{{ aluno.nome }}</td>
+        <td>{{ aluno.data_nasc }}</td>
+        <td>{{ aluno.sexo}}</td>
+        <td>{{ aluno.av1}}</td>
+        <td>{{ aluno.av2}}</td>
+        <td>{{ aluno.media}}</td>
+        <td>
+          <a href="/edit/{{ aluno.cpf }}">Editar</a>
+          <a href="/delete/{{ aluno.cpf }}">Deletar</a>
+        </td>
+      </tr>
+    {% endfor %}
+  </table>
+</body>
+</html>
