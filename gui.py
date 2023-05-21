@@ -42,7 +42,7 @@ entry_av1 = tk.Entry(window)
 label_av2 = tk.Label(window, text='Av2:')
 entry_av2 = tk.Entry(window)
 
-label_media = tk.Label(window, text='Média:')
+label_media = tk.Label(window, text='Média:'+((entry_av1+entry_av2)/2))
 entry_media = tk.Entry(window)
 
 button_add = tk.Button(window, text='Adicionar', command=add_aluno)

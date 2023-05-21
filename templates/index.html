@@ -25,7 +25,7 @@
         <td>{{ aluno.sexo}}</td>
         <td>{{ aluno.av1}}</td>
         <td>{{ aluno.av2}}</td>
-        <td>{{ aluno.media}}</td>
+        <td>{{ (aluno.av1+aluno.av2)/2}}</td>
         <td>
           <a href="/edit/{{ aluno.cpf }}">Editar</a>
           <a href="/delete/{{ aluno.cpf }}">Deletar</a>
