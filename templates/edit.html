@@ -8,7 +8,7 @@
   <h1>Editar aluno</h1>
   <form method="POST" action="/edit/{{ aluno.cpf }}">
     <p>Nome: <input type="text" name="nome" value="{{ aluno.nome }}"></p>
-    <p>Data de Nascimento: <input type="text" name="data_nasc" value="{{ aluno.data_nasc }}"></p>
+    <p>Data de Nascimento: <input type="date" name="data_nasc" value="{{ aluno.data_nasc }}"></p>
     <p>Sexo: <input type="text" name="sexo" value="{{ aluno.sexo }}"></p>
     <p>Av1: <input type="text" name="av1" value="{{ aluno.av1 }}"></p>
     <p>Av2: <input type="text" name="av2" value="{{ aluno.av2 }}"></p>

@@ -11,6 +11,7 @@
       <th>CPF</th>
       <th>Nome</th>
       <th>Data de Nascimento</th>
+      <th>Idade</th>
       <th>Sexo</th>
       <th>Av1</th>
       <th>Av2</th>
@@ -22,10 +23,11 @@
         <td>{{ aluno.cpf}}</td>
         <td>{{ aluno.nome }}</td>
         <td>{{ aluno.data_nasc }}</td>
+        <td>{{ aluno.idade}}</td>
         <td>{{ aluno.sexo}}</td>
         <td>{{ aluno.av1}}</td>
         <td>{{ aluno.av2}}</td>
-        <td>{{ (aluno.av1+aluno.av2)/2}}</td>
+        <td>{{ aluno.media}}</td>
         <td>
           <a href="/edit/{{ aluno.cpf }}">Editar</a>
           <a href="/delete/{{ aluno.cpf }}">Deletar</a>
